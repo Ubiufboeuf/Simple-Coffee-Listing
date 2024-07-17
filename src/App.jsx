@@ -7,14 +7,14 @@ import { variables } from "./variables"
 export function Article({ name, img, price, rating, votes, isPopular, isAvailable }) {
   let available = ""
   let popular = ""
-  let starImg = "/src/assets/Star_fill.svg"
+  let starImg = "/assets/Star_fill.svg"
   let lbl_rating = rating ?? ""
   let lbl_votes
 
   if (!votes) {
     lbl_votes = "No ratings"
     lbl_rating = ""
-    starImg = "/src/assets/Star.svg"
+    starImg = "/assets/Star.svg"
   } else {
     lbl_votes = `(${votes} votes)`
     if (rating.toString().length === 1) {
@@ -83,7 +83,7 @@ function App() {
       setLocalData(data.filter(el => el.available))
     }
   }
-  
+
   return (
     <>
       <header>
@@ -101,7 +101,7 @@ function App() {
             onClick={handleAvailableSelectedClick}
           >{variables.available}</button>
         </div>
-        <img src="/src/assets/vector.svg" />
+        <img src="/assets/vector.svg" />
       </header>
       <main>
         {

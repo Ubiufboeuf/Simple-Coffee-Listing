@@ -1,6 +1,6 @@
 @font-face {
   font-family: DM_Sans;
-  src: url("/src/assets/DMSansVariable.ttf");
+  src: url("/assets/DMSansVariable.ttf");
 }
 
 :root {
@@ -25,7 +25,7 @@ h1 {
 }
 
 body {
-  background-image: url("/src/assets/bg-cafe.jpg");
+  background-image: url("/assets/bg-cafe.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
