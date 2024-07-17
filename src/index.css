@@ -80,6 +80,7 @@ img {
   margin: 120px 0;
   border-radius: 12px;
   padding: 84px 112px;
+  gap: 28px;
 }
 
 header {
@@ -91,6 +92,12 @@ header {
   width: 500px;
   text-align: center;
   gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+header * {
+  z-index: 2;
 }
 
 header h1 {
@@ -110,6 +117,14 @@ header div {
   justify-content: center;
   align-items: center;
   margin: 12px 0;
+}
+
+header img {
+  position: absolute;
+  top: -60px;
+  right: -20px;
+  height: 160px;
+  z-index: 1;
 }
 
 button {
